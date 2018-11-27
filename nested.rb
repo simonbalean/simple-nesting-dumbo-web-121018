@@ -19,7 +19,6 @@ def hopper
 end
 
 def alan_kay_is_known_for
-
 	programmer_hash = 
  		{
         :grace_hopper => {
@@ -58,12 +57,6 @@ def dennis_ritchies_language
 end
 
 def adding_matz
-# add the following information to the top level of programmer_hash
-# :yukihiro_matsumoto => {
-#   :known_for => "Ruby",
-#    :languages => ["LISP", "C"]
-# }
-
 	programmer_hash = 
  		{
         :grace_hopper => {
@@ -121,6 +114,6 @@ def adding_to_dennis
           :languages => ["C"]
         }
      }
-     programmer_hash[:dennis_ritchie] = {languages: }
-
+     programmer_hash[:dennis_ritchie][:languages] << "Assembly"
+     programmer_hash
 end
